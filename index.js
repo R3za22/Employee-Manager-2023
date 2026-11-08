@@ -319,8 +319,8 @@ const printtable = (list) => {
 
     return `<tr>
     <td class="icons-ts">
-    <a href="#/" class="delete-btn"><i class="fa fa-times"></i></a>
-    <a href="#/" class="edit-btn"><i class="fa fa-pen"></i></a>
+    <a href="#/" class="delete-btn" aria-label="حذف"><i class="fa fa-times"></i></a>
+    <a href="#/" class="edit-btn" aria-label="ویرایش"><i class="fa fa-pen"></i></a>
     </td>
     <td>${status}</td>
     <td>${group}</td>

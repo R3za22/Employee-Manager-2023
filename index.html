@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="مدیریت کارمندان: افزودن، ویرایش و جستجوی کارمندان بر اساس گروه، وضعیت و تاریخ." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23e75480'/%3E%3C/svg%3E" />
     <!-- font-awesome -->
     <link
       rel="stylesheet"
@@ -104,8 +106,8 @@
       <div class="searching-box">
         <div class="featured-center section-center">
           <form class="input-form">
-            <input type="checkbox" class="check-input form-edit-checkbox" checked  />
-            <select name="group" id="group" class="drop-input form-edit-group">
+            <input type="checkbox" class="check-input form-edit-checkbox" aria-label="فعال" checked  />
+            <select name="group" id="group" class="drop-input form-edit-group" aria-label="گروه">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -154,11 +156,11 @@
         <div class="featured-center section-center">
           <form class="input-form">
   
-            <select class="drop-input drop-input-year">
+            <select class="drop-input drop-input-year" aria-label="سال">
   
             </select>
   
-            <select class="drop-input drop-input-day">
+            <select class="drop-input drop-input-day" aria-label="روز هفته">
               <option value="1">شنبه</option>
               <option value="2">یک شنبه</option>
               <option value="3">دو شنبه</option>
@@ -169,7 +171,7 @@
   
             </select>
   
-            <select class="drop-input drop-input-kabise">
+            <select class="drop-input drop-input-kabise" aria-label="کبیسه">
               <option value="false">غیر کبیسه</option>
               <option value="true">کبیسه</option>
             </select>
@@ -177,7 +179,7 @@
           </form>
         </div>
         <div class="wtf-btn-container">
-          <a href="index.html#wtf-list" class="btn wtf-switch wtf-btn-mode-2">
+          <a href="index.html#wtf-list" aria-label="تغییر حالت" class="btn wtf-switch wtf-btn-mode-2">
             <i class="fa fa-search wtf-mini-ico"></i>
           </a>
           <a href="index.html#wtf-list" class="btn wtf-btn wtf-btn-mode-1">
@@ -204,11 +206,11 @@
           <form class="input-form">
   
   
-            <select class="drop-input drop-input-year">
+            <select class="drop-input drop-input-year" aria-label="سال">
   
             </select>
   
-            <select class="drop-input drop-input-months">
+            <select class="drop-input drop-input-months" aria-label="ماه">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -223,7 +225,7 @@
               <option value="12">12</option>
             </select>
             
-            <select class="drop-input drop-input-daynum">
+            <select class="drop-input drop-input-daynum" aria-label="روز ماه">
   
             </select>
             
@@ -238,7 +240,7 @@
           <a href="index.html#wtf-list" class="btn wtf-btn-2 wtf-btn-mode-1 wtf-btn-color-2">
             جستجو
           </a>
-          <a href="index.html#wtf-list" class="btn wtf-switch wtf-btn-mode-2 wtf-btn-color-2">
+          <a href="index.html#wtf-list" aria-label="تغییر حالت" class="btn wtf-switch wtf-btn-mode-2 wtf-btn-color-2">
             <i class="fa fa-calendar wtf-mini-ico"></i>
           </a>
         </div>
