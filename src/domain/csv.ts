@@ -1,6 +1,6 @@
 /** Minimal RFC 4180 CSV parser. Handles quotes, escaped quotes, CRLF and a UTF-8 BOM. */
 export function parseCsv(text: string): string[][] {
-  const src = text.replace(/^﻿/, '')
+  const src = text.charCodeAt(0) === 0xfeff ? text.slice(1) : text
   const rows: string[][] = []
   let row: string[] = []
   let cell = ''

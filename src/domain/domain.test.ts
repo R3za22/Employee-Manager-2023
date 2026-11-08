@@ -174,7 +174,7 @@ describe('validateEmployee', () => {
 
 describe('csv', () => {
   it('parses quotes, commas, newlines, CRLF and BOM', () => {
-    const rows = parseCsv('﻿a,b\r\n"x, y","He said ""hi"""\r\n"line1\nline2",z\r\n\r\n')
+    const rows = parseCsv('\uFEFFa,b\r\n"x, y","He said ""hi"""\r\n"line1\nline2",z\r\n\r\n')
     expect(rows).toEqual([['a', 'b'], ['x, y', 'He said "hi"'], ['line1\nline2', 'z']])
   })
   it('round-trips through toCsv', () => {
